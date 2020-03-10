@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Ahmed & Azure</title>
+</head>
+<body>
+<h1>Welcome to Ahmed's web API hosted on Azure!</h1>
+<p>Go ahead and test my web API. Use a tool like postman or whatever you may prefer </p>
+<p>To perform a GET request, type ("/cars/{id}") after the url to retrieve a single JSON object</p>
+<p>To retrieve all JSON objects, simply type "/cars" at the end of the url</p>
+<p>To perform a DELETE request, type ("/cars/{id}") and specify your ID<p>
+<p>To perform a PUT request, type ("/cars/{id}") and specify your ID. Then fill in the object's
+new values. The keys are the following:
+<ul>
+<li>String brand</li>
+	  <li>String type</li>
+	  <li>String model</li>
+</ul>
+<p> So for example, if we did a PUT request, it will look like this:</p>
+<ul>
+<li>"brand": "BMW"</li>
+<li>"type": "Coupe"</li>
+<li>"model": "M4"</li>
+
+</ul>
+
+<p>Now finally, to perform a POST request, type "/cars" after the url. No need to specify an ID. You will once again
+need to specify the values for the keys I mentioned above</p>
+</body>
+</html>
