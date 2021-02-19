@@ -9,50 +9,53 @@ import javax.persistence.Id;
 @Data
 @Entity
 public class Car {
-	
-	  public Long getId() {
-		return id;
-	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public String getBrand() {
-		return brand;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public void setBrand(String brand) {
-		this.brand = brand;
-	}
+    public String getBrand() {
+        return brand;
+    }
 
-	public String getType() {
-		return type;
-	}
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 
-	public void setType(String type) {
-		this.type = type;
-	}
+    public String getType() {
+        return type;
+    }
 
-	public String getModel() {
-		return model;
-	}
+    public void setType(String type) {
+        this.type = type;
+    }
 
-	public void setModel(String model) {
-		this.model = model;
-	}
+    public String getModel() {
+        return model;
+    }
 
-	private @Id @GeneratedValue Long id;
-	  private String brand;
-	  private String type;
-	  private String model;
-	  
-	  Car() {}
-	  
-	  Car(String brand, String type, String model) {
-		  this.brand = brand;
-		  this.type = type;
-		  this.model = model;
-	  }
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    private @Id
+    @GeneratedValue
+    Long id;
+    private String brand;
+    private String type;
+    private String model;
+
+    Car() {
+    }
+
+    Car(String brand, String type, String model) {
+        this.brand = brand;
+        this.type = type;
+        this.model = model;
+    }
 
 }
